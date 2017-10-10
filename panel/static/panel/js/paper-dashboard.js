@@ -21,7 +21,8 @@ var navbar_initialized = false;
 
 $(document).ready(function(){
     window_width = $(window).width();
-
+    /* Validaciones efectos */
+    $("div.dropdown-menu[role='combobox']").removeClass("open");
     $('.modal').appendTo('body');
 
     // Init navigation toggle for small screens

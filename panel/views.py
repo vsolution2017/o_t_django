@@ -47,7 +47,7 @@ def parroquia_serialize(parroquia):
     return {'id': parroquia.id, 'descripcion': parroquia.descripcion};
 
 def load_actividad(request):
-    actividades = TipoActividad.objects.all()
+    actividades = TipoActividad.objects.all().select_related()
     actividades = [actividad_serialize(actividad) for actividad in actividades]
     return HttpResponse(json.dumps(actividades),content_type='application/json')
 
