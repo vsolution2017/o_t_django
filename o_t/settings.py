@@ -81,8 +81,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'o_t_django_v2',
         'USER': 'kbsg',
-        #'PASSWORD': 'kbsg',
-        'PASSWORD': 'v_solution',
+        'PASSWORD': 'kbsg',
+        #'PASSWORD': 'v_solution',
         'HOST': 'localhost'
     }
 }
